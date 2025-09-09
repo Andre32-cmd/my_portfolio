@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* навигации */
+.navbar {
+    background-color: #2c2c2c;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(81, 255, 0, 0.2);
+}
+
+/* кнопки навигации */
+.navbar a {
+    color: rgb(47, 250, 44);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ddd;
+}
+
+/* Блок О себе*/
+.hero {
+    padding: 230px 20px;
+    background: rgb(52, 52, 52);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+}
+
+.hero .hero-content {
+    max-width: 1200px;
+    max-height: 1000;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+/* имя */
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    color: #000000;
+    line-height: 1.2;
+}
+
+/* текст под именем */
+.hero-text p {
+    font-size: 1.25rem;
+    color: #919191;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    flex: 0 0 400px;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    border: 5px solid #f5f5f5;
+    transition: transform 0.4s ease;
+}
+
+.hero-image img:hover {
+    transform: translateY(-8px);
+}
+
+/* достижения */
+.dostijenia-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: rgb(47, 250, 44);
+    margin: 40px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.dostijenia-section h2 {
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.dostijenia-section .dostijenia-section {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+    background: #fafafa;
+    border-left: 4px solid #ccc;
+}
+
+/* Письмо */
+.letter-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: white;
+    margin: 40px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.letter-section h2 {
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.letter-section .letter-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+    background: #fafafa;
+    border-left: 4px solid #ccc;
+}
+
+/* Контакты */
+.contacts {
+    padding: 60px 20px;
+    text-align: center;
+    background: #2c2c2c;
+    color: rgb(47, 250, 44);;
+    margin: 40px auto;
+    max-width: 900px;
+    border-radius: 10px;
+}
+
+.contacts h2 {
+    margin-bottom: 20px;
+}
+
+.contacts a {
+    color: #00a2ff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.contacts a:hover {
+    color: white;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 20px;
+    }
+    .hero-image {
+        order: -1;
+    }
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+    .hero-text p {
+        font-size: 1.1rem;
+    }
+    .video-section iframe,
+    .video-section video {
+        height: 250px;
+    }
+    .navbar a {
+        display: block;
+        margin: 10px 0;
+    }
+}
